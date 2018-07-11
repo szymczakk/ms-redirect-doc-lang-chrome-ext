@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
 
   "name": "Microsoft doc language redirecter",
   "description": "This extension change Microsoft language in documentation for defined one",
@@ -18,7 +18,7 @@
    },
    "content_scripts": [
     {
-      "matches": ["https://*.microsoft.com/*"],
+      "matches": ["*://msdn.microsoft.com/*", "*://docs.microsoft.com/*", "*://azure.microsoft.com/*"],
       "js": ["ms-doc-script.js"]
     }
   ]
